@@ -46,6 +46,9 @@ body{
     font-weight: 500;
     line-height: normal;
 }
+a{
+    text-decoration: none;  
+}
 .heading-name span{
     padding-right: 10px;
 }
@@ -174,7 +177,7 @@ line-height: normal;
     border-radius: 8px;
     background: #F66401;
     /* display: inline-flex; */
-    width:80% ;
+    width:90% ;
     min-height: 70vh;
     justify-content: center;
     align-items: center;
@@ -215,4 +218,41 @@ td{
 .noline{
     border-bottom: none;
 }
-
+table{
+    width: 95%;
+}
+th,td{
+    padding: 5px;
+    vertical-align: top;
+}
+th:first-child{
+    width: 16%;
+}
+.response{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.message,.resolved,.reject{
+    display: flex;
+    /* width: 126px; */
+padding: 8px 12px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 8px;
+background: #F66401;
+color: #FFF;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.resolved{
+    background: #2B9773;
+}
+.reject{
+    background: none;
+    border: 1px solid #E31C2E;
+    color: #E31C2E;
+}

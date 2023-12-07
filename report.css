@@ -46,6 +46,9 @@ body{
     font-weight: 500;
     line-height: normal;
 }
+a{
+    text-decoration: none;
+}
 .heading-name span{
     padding-right: 10px;
 }
