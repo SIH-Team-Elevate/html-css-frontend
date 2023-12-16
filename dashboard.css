@@ -53,7 +53,7 @@ a{
 .heading-name span{
     padding-right: 10px;
 }
-.heading-name:hover,.heading-name:nth-child(4){
+.heading-name:hover{
     background: #101A29;
     color: #FFF;
     cursor: pointer;
@@ -103,103 +103,130 @@ margin:28px auto;
 }
 
 /* -------------Content---------------- */
-a{
-    color: inherit;
-    text-decoration: none;
-}
+
 .content{
     margin-left: 20%;
     width: 80%;
-    display: flex;
-}
-.catalog{
-    width: 35%;
-    height: 100%;
-    min-height: 90vh;
-    background: #FFF;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
-    border-radius: 8px;
-    margin: 20px;
-    padding: 20px;
-}
-.ele{
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    margin: 32px 0px 32px 0px;
-}
-.name{
-    color: var(--Black-1, #101A29);
-font-family: Outfit;
-font-size: 20px;
-padding: 4px;
-font-style: normal;
-font-weight: 400;
-line-height: 16px; /* 100% */
-}
-.empid{
-    color: var(--Black-2, #4A4A4A);
-font-size: 16px;
-font-style: normal;
-font-weight: 300;
-line-height: 16px; /* 114.286% */
-padding: 4px;
-}
-.mbutton{
-    color: var(--Black-1, #101A29);
-text-align: center;
-font-family: Outfit;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 16px; /* 114.286% */
-padding: 10px;
-padding: 15px 30px;
-background-color: #D4E5FF;
-border-radius: 8px;
-border: none;
-}
-.detail{
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.messagebox{
-    width: 630px;
-    right: 20px;
-    /* height: 100%; */
-    height: 95vh;
-    background: #FFF;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
-    border-radius: 8px;
-    margin: 20px;
-    margin-left: 0px;
-    /* padding: 20px; */
-    position: fixed;
+    height: 90vh;
     display: flex;
     flex-direction: column;
 }
-.header{
+.top{
     display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    padding: 20px  20px 5px 20px;
-    gap: 20px;
 }
-.photoo{
-    background: url(profile-pic.png);
+.map{
+    display: flex;
+    width: 700px;
+    height: 350px;
+    margin: 30px;
+    margin-right: 0px;
+    background: url(map.png);
     background-size: cover;
-    background-position: center;
-    width: 48px;
-    height: 48px;
-    margin: 5px;
+    background-color: #101A29;
 }
-.namee{
-    font-size: 24px;
+.r{
+    margin: 30px 60px ;
+    width: 300px;
+    margin-left: 30px;
 }
-.linee{
-    height: 1px;
-    width: 100%;
-    background: #111;
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headingss{
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--Black-1, #101A29);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Outfit;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px;
+}
+.row{
+    color: #008000;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Outfit;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; 
+padding: 5px 30px;
+}
+.showel,.Dumper{
+    background-color: #FFF;
+    border-radius: 8px;
+    width: 350px;
+}
+.showel{
+    margin-bottom: 30px;
+}
+.row:nth-child(odd){
+    color: #F00;
+}
+
+
+.report{
+    position: relative;
+    top: 10px;
+    left: 30px;
+    border-radius: 8px;
+    background: #F66401;
+    width:700px ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+table{
+    position: relative;
+    top: 28px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+    border-collapse: collapse;
+    }
+th{
+    color: #000;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-align: left;
+}
+tr{
+    height: 40px;
+    border-bottom: 1px solid var(--text-grey-2, #656768);
+}
+td{
+    color: #000000d3;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.noline{
+    border-bottom: none;
+}
+
+.graph{
+    background-color: #e6afaf;
+    border-radius: 8px;
+    margin-left: 60px;
+    margin-top: 10px;
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading-name:nth-child(1){
+    background: #101A29;
+    color: #FFF;
+    cursor: pointer;
 }

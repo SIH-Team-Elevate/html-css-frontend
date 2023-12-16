@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Time', 'Ore', 'Overburden'],
+          ['7',  1000,      400],
+          ['8',  1170,      460],
+          ['9',  660,       1120],
+          ['10',  1030,      540],
+          ['11', 900, 726],
+          ['12',910, 720]
+        ]);
+
+        var options = {
+          title: 'Extraction',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand-name">Elevate</div>
+        <div class="line"></div>
+        <div class="heading">
+            <a class="heading-name" href="dashboard.html">
+                <span class="material-symbols-outlined">home</span>
+                Dashboard
+            </a>
+            <a class="heading-name" href="vechilestatus.html">
+                <span class="material-symbols-outlined">person</span>
+                Monitoring
+            </a>
+            <a class="heading-name" href="Announcement.html">
+                <span class="material-symbols-outlined">campaign</span>
+                Announcement
+            </a>
+            <a class="heading-name" href="Message.html">
+                <span class="material-symbols-outlined">chat_bubble</span>
+                Message
+            </a>
+        </div>
+        <div class="line"></div>
+        <div class="user">
+            <div class="user-photo"></div>
+            <div class="user-data">
+                <div class="user-name">Pratyaksh</div>
+                <div class="user-code">2022CS51654</div>
+            </div>
+        </div>
+        <div class="logout">
+            <span class="material-symbols-outlined">logout</span>
+            Logout
+        </div>
+    </div>
+    <div class="content">
+        <div class="top">
+            <div class="map"></div>
+            <div class="r">
+                <div class="showel">
+                    <div class="headingss">Showel</div>
+                    <div class="row">
+                        <div>Active:</div>
+                        <div>12</div>
+                    </div>
+                    <div class="row">
+                        <div>Inactive:</div>
+                        <div>2</div>
+                    </div>
+                </div>
+                <div class="Dumper">
+                    <div class="headingss">Dumper</div>
+                    <div class="row">
+                        <div>Active:</div>
+                        <div>12</div>
+                    </div>
+                    <div class="row">
+                        <div>Inactive:</div>
+                        <div>2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top bottom">
+            <div class="report">
+                <table class="table">
+                    <tr class="noline">
+                        <th>Alerts</th>
+                    
+                    </tr>
+                    <tr>
+                        <td>Pratyaksh
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur enim quidem quos ut! Eaque incidunt maxime, consequatur aut delect placeat similique non at recusandae expedita obcaecati totam maiores in adipisci, rerum reiciendis. Accusantium aliquid cumque soluta. Itaque.x
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Arnav</td>
+                    </tr>
+                    <tr>
+                        <td>Shivam</td>
+                    </tr>
+                    <tr>
+                        <td>Shivam</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="graph">
+                <div id="curve_chart" style="width: 340px; height: 340px; "></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
